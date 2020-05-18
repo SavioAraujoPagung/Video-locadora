@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Item</title>
+</head>
+<body>
+    <div align = "Center"> <h1>Item</h1> </div>
+    <hr>
+
+    <div align = "left"><h3>Cadastrar</h3></div>
+    <form action="cadastar">
+        <label for="numSerie">Numero de serie: </label>
+        <input type="number" name="numSerie" id="numSerie"><br><br>
+        <label for="dtAquisicao">Data da aquisição: </label>
+        <input type="date" name="dtAquisicao" id="dtAquisicao"><br><br>
+        
+        <label for="tipoItem">Tipo do Item: </label> <br>
+        <input type="radio" name="tipoItem" value = "DVD"> DVD <br>
+        <input type="radio" name="tipoItem" value = "Fita"> Fita <br>
+        <input type="radio" name="tipoItem" value = "blueRay"> Blue Ray <br>
+        <br>
+        <button>Cadastrar</button>
+        <hr>
+    </form>
+
+    <div align = "left"><h3>Alterar</h3></div>
+    <form action="alterar">
+        <label for="numSerie">Numero: </label>
+        <input type="number" name="numSerie" id="numSerie">
+        <button>Pesquisar</button><br>
+        <p>
+            Segue abaixo as informações do item para alterar:
+        </p>
+        <label for="numSerie">Numero de serie: </label>
+        <input type="number" name="numSerie" id="numSerie"><br><br>
+        <label for="dtAquisicao">Data da aquisição: </label>
+        <input type="date" name="dtAquisicao" id="dtAquisicao"><br><br>
+        
+        <label for="tipoItem">Tipo do Item: </label> <br>
+        <input type="radio" name="tipoItem" value = "DVD"> DVD <br>
+        <input type="radio" name="tipoItem" value = "Fita"> Fita <br>
+        <input type="radio" name="tipoItem" value = "blueRay"> Blue Ray <br>
+        <br>
+        <button>Alterar</button>
+        <hr>
+    </form>
+
+    <div align = "left"><h3>Excluir</h3></div>
+    <form action="excluir">
+        <label for="numSerie">Numero: </label>
+        <input type="number" name="numSerie" id="numSerie">
+        <button>Pesquisar</button><br>
+        <p>
+            Segue abaixo as informações do item que será excluido:
+        </p>
+        <label for="numSerie">Numero de serie: </label>
+        <input type="number" name="numSerie" id="numSerie"><br><br>
+        <label for="dtAquisicao">Data da aquisição: </label>
+        <input type="date" name="dtAquisicao" id="dtAquisicao"><br><br>
+        
+        <label for="tipoItem">Tipo do Item: </label> <br>
+        <input type="radio" name="tipoItem" value = "DVD"> DVD <br>
+        <input type="radio" name="tipoItem" value = "Fita"> Fita <br>
+        <input type="radio" name="tipoItem" value = "blueRay"> Blue Ray <br>
+        <br>
+        <button>Excluir</button>
+        <hr>
+        <br><br>
+    </form>
+</body>
+</html>

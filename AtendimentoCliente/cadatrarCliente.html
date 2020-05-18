@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar cliente</title>
+</head>
+<body>
+    <div align = "center"><h1>Cadastrar Cliente</h1></div>
+    <hr>
+    <div align = "left"><h3>Dados do Cliente</h3></div>
+    <form action="cadastar">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome"> <br> <br>
+        <label for="ano"> Data de lançamento: </label>
+        <input type="date" name="ano" id="ano"> <br><br>
+        <label for="sexo">sexo: </label>
+        <input type="text" name="sinopse" id="sinopse"> <br><br>
+        <label for="estahAtivo">Esta ativo: </label> 
+        <input type="radio" name="ativo" valeu = "Sim"> Sim 
+        <input type="radio" name="ativo" valeu = "Não"> Não 
+        <br><br>
+        <label for="socio">Novo socio: </label> 
+        <input type="radio" name="socio" valeu = "Sim"> Sim 
+        <input type="radio" name="socio" valeu = "Não"> Não 
+        <br><br>
+        <label for="cpf">cpf: </label>
+        <input type="text" name="cpf" id="cpf"> <br> <br>
+        <label for="endereço">Endereço: </label>
+        <input type="text" name="endereço" id="endereço"> <br> <br>
+        <label for="telefone">Telefone: </label>
+        <input type="text" name="telefone" id="telefone"> <br> 
+
+
+        <h3>Informações do responsável</h3>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome"> 
+        <button>pesquisar</button>
+        <br> <br>
+        <table border="1">
+            <tr>
+                <td><strong>Nome</strong></td>
+                <td><strong>Data de nascimento</strong></td>
+                <td><strong>CPF</strong></td>
+                <td><strong>Telefone</strong></td>
+            </tr>
+            <tr>
+                <td>Savio Araujo Pagung</td>
+                <td>14/05/1998</td>
+                <td>170.228.717-36</td>
+                <td>(27)9 9831-4716</td>
+            </tr>
+        </table>
+    
+        <br><br>
+
+        <button>Cadastrar</button>
+    </form>
+</body>
+</html>

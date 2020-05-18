@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Título</title>
+</head>
+<body>
+    <div align = "Center"> <h1>Titulos</h1> </div>
+    <hr>
+
+    <div align = "left"><h3>Pesquisar</h3></div>
+    <form action="cadastar">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <label for="ano"> Data de lançamento: </label>
+        <input type="date" name="ano" id="ano">
+        <label for="sinopse">Sinopse: </label>
+        <input type="text" name="sinopse" id="sinopse">
+        <label for="categoria">Categoria: </label>
+        <input type="text" name="categoria" id="categoria">
+        <button>Pesquisar</button>
+        <br><br>
+    </form>
+
+    <table border="2">
+        <tr>
+            <td><strong>Nome</strong></td>
+            <td><strong>Lançamento</strong></td>
+            <td><strong>Sinopse</strong></td>
+            <td><strong>Categoria</strong></td>
+        </tr>
+        <tr>
+            <td>Os Vingadores</td>
+            <td>27/04/2012</td>
+            <td>Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes</td>
+            <td>Fantasia/Filme de ficção científica</td>
+        </tr>
+        <tr>
+            <td>Vingadores: Era de Ultron</td>
+            <td>23/04/2015</td>
+            <td>Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron. Com o destino da Terra em jogo, Capitão América, Homem de Ferro, Thor, Hulk, Viúva Negra e Gavião Arqueiro terão que se unir para mais uma vez salvar a raça humana da extinção.</td>
+            <td>Fantasia/Filme de ficção científica</td>
+        </tr>
+        <tr>
+            <td>Vingadores: Guerra Infinita</td>
+            <td>26/04/2018</td>
+            <td>Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.</td>
+            <td>Fantasia/Filme de ficção científica</td>
+        </tr>
+        <tr>
+            <td>Vingadores: Ultimato</td>
+            <td>25/04/2019</td>
+            <td>DescriçãoApós Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</td>
+            <td>Fantasia/Filme de ficção científica</td>
+        </tr>
+
+    </table>
+    <hr>
+
+    <div align = "left"><h3>Cadastrar novo Título</h3></div>
+    <form action="cadastar">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">   
+        <br><br>
+        <label for="ano"> Data de lançamento: </label>
+        <input type="date" name="ano" id="ano">
+        <br><br>
+        <label for="sinopse">Sinopse: </label>
+        <input type="text" name="sinopse" id="sinopse">
+        <br><br>
+        <label for="categoria">Categoria: </label>
+        <input type="text" name="categoria" id="categoria">
+        <br><br>
+        <button>Cadastrar</button>
+        <br><br>
+    </form>
+    <hr>
+
+    <div align = "left"><h3>Alterar Título</h3></div>
+    <form action="alterar">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <button>Pesquisar</button>
+        <br><br>
+        <p>
+            Abaixo, altere as infornações desejadas:
+        </p>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">   
+        <br><br>
+        <label for="ano"> Data de lançamento: </label>
+        <input type="date" name="ano" id="ano">
+        <br><br>
+        <label for="sinopse">Sinopse: </label>
+        <input type="text" name="sinopse" id="sinopse">
+        <br><br>
+        <label for="categoria">Categoria: </label>
+        <input type="text" name="categoria" id="categoria">
+        <br><br>
+        <button>Alterar</button>
+        <br><br>
+    </form>
+    <hr>
+
+    <div align = "left"><h3>Excluir Título</h3></div>
+    <form action="alterar">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <button>Pesquisar</button>
+        <br><br>
+        <p>
+            Abaixo contém as informações do título pesquisado:
+        </p>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">   
+        <br><br>
+        <label for="ano"> Data de lançamento: </label>
+        <input type="date" name="ano" id="ano">
+        <br><br>
+        <label for="sinopse">Sinopse: </label>
+        <input type="text" name="sinopse" id="sinopse">
+        <br><br>
+        <label for="categoria">Categoria: </label>
+        <input type="text" name="categoria" id="categoria">
+        <br><br>
+        <p>
+            Caso as informações sejam compatíveis com o título que deseja excluir basta pressionar o botão abaixo.
+        </p>
+        <button>Excluir</button>
+        <br><br>
+        <hr>
+    </form>
+    
+
+</body>
+</html>
