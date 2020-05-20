@@ -4,59 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 
     <title>Ator</title>
 </head>
 <body>
-    <div align = "Center"> <h1>Ator</h1> </div>
+    <div align = "Center" > <h1>Ator</h1> </div>
     <hr>
+    <div class="container">
+        <h4>Adicionar novo Ator</h4>
+        <form action="">
+            <label>Nome: </label>
+            <input type="text" name="nomeAtor">
+            <button type="submit" class="btn btn-outline-success">Adicionar</button>
+        </form>
+    </div>
 
-    <div align = "left"><h3>Cadastrar novo ator</h3></div>
-    <form action="cadastar">
-        <label for="nome">Nome novo ator: </label>
-        <input type="text" name="nome" id="nome">
-        <button>Cadastrar</button>
-        <br><br>
-    </form>
-    <hr>
-
-    <div align = "left"><h3>Excluir ator</h3></div>
-    <form action="excluir">
-        <label for="nome">Nome do ator que sera excluido: </label>
-        <input type="text" name="nome" id="nome">
-        <button>Excluir</button>
-        <br><br>
-    </form>
-    <hr>
-
-    <div align = "left"><h3>Pesquisar</h3></div>
-    <form action="pesquisar">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">
-        <button>Pesquisar</button>
-
-        <br><br>
-
-        <table border="2">
-            <tr>
-                <td>savio</td>
-                <td>araujo</td>
-                <td>pagung</td>
-            </tr>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th align="laft"><strong>#</strong></th>
+                    <th align="center"><strong> Nome do Ator </strong></th>
+                    <th align="center"><strong> Ações </strong></th>
+                </tr>
+            </thead>
+            <body>
+                <tr>
+                    <form action="">
+                        <td align="left"><label for="">1</label> </td>
+                        <td align="left">Sávio</td>
+                        <td align="left"> 
+                            <form action=""></form>
+                            <button type="submit" class="btn btn-outline-danger">
+                                <svg class="bi bi-trash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 5.5A.5.5 0 016 6v6a.5.5 0 01-1 0V6a.5.5 0 01.5-.5zm2.5 0a.5.5 0 01.5.5v6a.5.5 0 01-1 0V6a.5.5 0 01.5-.5zm3 .5a.5.5 0 00-1 0v6a.5.5 0 001 0V6z"/>
+                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 01-1 1H13v9a2 2 0 01-2 2H5a2 2 0 01-2-2V4h-.5a1 1 0 01-1-1V2a1 1 0 011-1H6a1 1 0 011-1h2a1 1 0 011 1h3.5a1 1 0 011 1v1zM4.118 4L4 4.059V13a1 1 0 001 1h6a1 1 0 001-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                            <button type="submit" id="btnExcluir" class="btn btn-outline-warning">
+                                Editar
+                            </button>
+                        </td>
+                    </form>
+                </tr>
+            </body>
         </table>
-        <br>
-    </form>
-    <hr>
-
-    <div align = "left"><h3>Alterar</h3></div>
-    <form action="alterar">
-        <label for="name"> Ator: </label>
-        <input type="text" name="nome" id="nome">
-        <label for="novoNome">      Novo nome: </label>
-        <input type="text" name="nome" id="nome">
-        <button>Alterar</button>
-        <br><br>
-    </form>
-    <hr>
+    </div>
 
 
 </body>
