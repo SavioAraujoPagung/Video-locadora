@@ -4,135 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 
     <title>Título</title>
 </head>
 <body>
-    <div align = "Center"> <h1>Titulos</h1> </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+
+            <a class="navbar-brand" href="Funcionario.html">
+                <img src="/Imagem/logo.png" width="30" height="30" alt="" loading="lazy">
+            </a>
+
+            <a class="navbar-brand" href="Funcionario.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="Ator.html">Ator </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Classe.html">Classe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Item.html">Item</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="Diretor.html"> Diretor</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="Titulo.html"> Titulo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div align = "Center"> <h1>Títulos</h1> </div>
     <hr>
-
-    <div align = "left"><h3>Pesquisar</h3></div>
-    <form action="cadastar">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">
-        <label for="ano"> Data de lançamento: </label>
-        <input type="date" name="ano" id="ano">
-        <label for="sinopse">Sinopse: </label>
-        <input type="text" name="sinopse" id="sinopse">
-        <label for="categoria">Categoria: </label>
-        <input type="text" name="categoria" id="categoria">
-        <button>Pesquisar</button>
-        <br><br>
-    </form>
-
-    <table border="2">
-        <tr>
-            <td><strong>Nome</strong></td>
-            <td><strong>Lançamento</strong></td>
-            <td><strong>Sinopse</strong></td>
-            <td><strong>Categoria</strong></td>
-        </tr>
-        <tr>
-            <td>Os Vingadores</td>
-            <td>27/04/2012</td>
-            <td>Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes</td>
-            <td>Fantasia/Filme de ficção científica</td>
-        </tr>
-        <tr>
-            <td>Vingadores: Era de Ultron</td>
-            <td>23/04/2015</td>
-            <td>Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron. Com o destino da Terra em jogo, Capitão América, Homem de Ferro, Thor, Hulk, Viúva Negra e Gavião Arqueiro terão que se unir para mais uma vez salvar a raça humana da extinção.</td>
-            <td>Fantasia/Filme de ficção científica</td>
-        </tr>
-        <tr>
-            <td>Vingadores: Guerra Infinita</td>
-            <td>26/04/2018</td>
-            <td>Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.</td>
-            <td>Fantasia/Filme de ficção científica</td>
-        </tr>
-        <tr>
-            <td>Vingadores: Ultimato</td>
-            <td>25/04/2019</td>
-            <td>DescriçãoApós Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</td>
-            <td>Fantasia/Filme de ficção científica</td>
-        </tr>
-
-    </table>
-    <hr>
-
-    <div align = "left"><h3>Cadastrar novo Título</h3></div>
-    <form action="cadastar">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">   
-        <br><br>
-        <label for="ano"> Data de lançamento: </label>
-        <input type="date" name="ano" id="ano">
-        <br><br>
-        <label for="sinopse">Sinopse: </label>
-        <input type="text" name="sinopse" id="sinopse">
-        <br><br>
-        <label for="categoria">Categoria: </label>
-        <input type="text" name="categoria" id="categoria">
-        <br><br>
-        <button>Cadastrar</button>
-        <br><br>
-    </form>
-    <hr>
-
-    <div align = "left"><h3>Alterar Título</h3></div>
-    <form action="alterar">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">
-        <button>Pesquisar</button>
-        <br><br>
-        <p>
-            Abaixo, altere as infornações desejadas:
-        </p>
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">   
-        <br><br>
-        <label for="ano"> Data de lançamento: </label>
-        <input type="date" name="ano" id="ano">
-        <br><br>
-        <label for="sinopse">Sinopse: </label>
-        <input type="text" name="sinopse" id="sinopse">
-        <br><br>
-        <label for="categoria">Categoria: </label>
-        <input type="text" name="categoria" id="categoria">
-        <br><br>
-        <button>Alterar</button>
-        <br><br>
-    </form>
-    <hr>
-
-    <div align = "left"><h3>Excluir Título</h3></div>
-    <form action="alterar">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">
-        <button>Pesquisar</button>
-        <br><br>
-        <p>
-            Abaixo contém as informações do título pesquisado:
-        </p>
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">   
-        <br><br>
-        <label for="ano"> Data de lançamento: </label>
-        <input type="date" name="ano" id="ano">
-        <br><br>
-        <label for="sinopse">Sinopse: </label>
-        <input type="text" name="sinopse" id="sinopse">
-        <br><br>
-        <label for="categoria">Categoria: </label>
-        <input type="text" name="categoria" id="categoria">
-        <br><br>
-        <p>
-            Caso as informações sejam compatíveis com o título que deseja excluir basta pressionar o botão abaixo.
-        </p>
-        <button>Excluir</button>
-        <br><br>
+    <div class="container">
+        <h3>Cadastrar novo Título</h3>
         <hr>
-    </form>
-    
+        <form action="cadastar">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">   
+            <label for="ano"> Data de lançamento: </label>
+            <input type="date" name="ano" id="ano">
+            <label for="sinopse">Sinopse: </label>
+            <input type="text" name="sinopse" id="sinopse">
+            <label for="categoria">Categoria: </label>
+            <input type="text" name="categoria" id="categoria">
+            <hr>
+            <form action="diretor">
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="diretor">Adicionar Diretor: </label>
+                        <select class="custom-select mr-sm-2" name="diretor" id="diretor">
+                            <option selected>Steven Spielberg</option>
+                            <option value="Fernando Meirelles">Fernando Meirelles</option>
+                            <option value="Kleber Mendonça">Kleber Mendonça</option>
+                            <option value="Guilherme Pagung">Guilherme Pagung</option>
+                        </select>
+                    </div>
+                    <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-primary">Adicionar Diretor</button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <form action="Ator">
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="ator">Adicionar Ator: </label>
+                        <select class="custom-select mr-sm-2" name="ator" id="ator">
+                            <option value="Savio">Savio</option>
+                        </select>
+                    </div>
+                    <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-primary">Adicionar Ator</button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <form action="Classe">
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="classe">Adicionar Classe: </label>
+                        <select class="custom-select mr-sm-2" name="classe" id="classe">
+                            <option value="INICIAL">INICIAL</option>
+                            <option value="PADRAO">PADRAO</option>
+                            <option value="PREMIUM">PREMIUM</option>
+                            <option value="MASTER">MASTER</option>
+                        </select>
+                    </div>
+                    <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-primary">Adicionar Classe</button>
+                    </div>
+                </div>
+            </form>
+            <button type="submit" class="btn btn-outline-primary">Cadastrar</button>
+        </form>
+
+    </div>
+    <hr>
 
 </body>
 </html>
